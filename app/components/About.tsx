@@ -18,10 +18,15 @@ export default function About() {
             overflow: "hidden",
             borderRadius: 18,
             boxShadow: "0 26px 60px -34px rgba(31,42,38,0.36)",
-            background: "#ddd5c5",
             aspectRatio: "5/4",
           }}
-        />
+        >
+          <img
+            src="/about-clinic.png"
+            alt="XD Aesthetic Clinic interior"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
+        </div>
         <div
           style={{
             position: "absolute",

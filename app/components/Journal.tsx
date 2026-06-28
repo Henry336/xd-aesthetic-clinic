@@ -5,6 +5,7 @@ const articles = [
     month: "Feb",
     title: "Welcome to XD Aesthetic Medical Clinic",
     excerpt: "An introduction to our philosophy of care, our team and the experience that awaits you.",
+    img: "/welcome_to_xd.jpg",
   },
   {
     id: "xd-n2",
@@ -12,6 +13,7 @@ const articles = [
     month: "Jan",
     title: "A place to love yourself",
     excerpt: "Why confidence begins with care — and how a considered treatment plan can help you feel it.",
+    img: "/a_place_to_love_yourself.jpg",
   },
 ];
 
@@ -70,7 +72,13 @@ export default function Journal() {
               }}
             >
               <div style={{ position: "relative" }}>
-                <div style={{ background: "#ddd5c5", aspectRatio: "16/10", width: "100%" }} />
+                <div style={{ aspectRatio: "16/10", width: "100%", overflow: "hidden" }}>
+                  <img
+                    src={a.img}
+                    alt={a.title}
+                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  />
+                </div>
                 <div
                   style={{
                     position: "absolute",

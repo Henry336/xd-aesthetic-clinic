@@ -100,10 +100,15 @@ export default function Hero() {
             overflow: "hidden",
             borderRadius: "260px 260px 18px 18px",
             boxShadow: "0 30px 70px -34px rgba(22,82,75,0.4)",
-            background: "#ddd5c5",
             aspectRatio: "4/5",
           }}
-        />
+        >
+          <img
+            src="/hero-arch.jpg"
+            alt="XD Aesthetic Clinic hero"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
+        </div>
         <div
           className="float-badge"
           style={{

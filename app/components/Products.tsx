@@ -1,12 +1,12 @@
 const products = [
-  { id: "xd-p1", category: "Mask", name: "Bio Cellulose Stem Cell Mask" },
-  { id: "xd-p2", category: "Calecim", name: "Multi-Action Cream" },
-  { id: "xd-p3", category: "Calecim", name: "Professional Serum" },
-  { id: "xd-p4", category: "Calecim", name: "Recovery Night Complex" },
-  { id: "xd-p5", category: "Calecim", name: "Restorative Hydration Cream" },
-  { id: "xd-p6", category: "Supplement", name: "Crystal Tomatoes" },
-  { id: "xd-p7", category: "Cyspera", name: "Intensive Pigment Corrector" },
-  { id: "xd-p8", category: "Serum", name: "F.A.C.E. Serum" },
+  { id: "xd-p1", category: "Mask", name: "Bio Cellulose Stem Cell Mask", img: "/cell_mask.jpg" },
+  { id: "xd-p2", category: "Calecim", name: "Multi-Action Cream", img: "/Muti-Action.png" },
+  { id: "xd-p3", category: "Calecim", name: "Professional Serum", img: "/calecim_serum_professional.webp" },
+  { id: "xd-p4", category: "Calecim", name: "Recovery Night Complex", img: "/CalecimRecoveryNightComplex_600x.webp" },
+  { id: "xd-p5", category: "Calecim", name: "Restorative Hydration Cream", img: "/Restorative-hydration.png" },
+  { id: "xd-p6", category: "Supplement", name: "Crystal Tomatoes", img: "/CRYSTAL-TOMATO.jpg" },
+  { id: "xd-p7", category: "Cyspera", name: "Intensive Pigment Corrector", img: "/cyspera_pigment_corrector.jpg" },
+  { id: "xd-p8", category: "Serum", name: "F.A.C.E. Serum", img: "/F.A.C.E.jpg" },
 ];
 
 export default function Products() {
@@ -63,10 +63,16 @@ export default function Products() {
                 overflow: "hidden",
                 borderRadius: 10,
                 marginBottom: 16,
-                background: "#f0ebe0",
                 aspectRatio: "1/1",
+                background: "#fff",
               }}
-            />
+            >
+              <img
+                src={p.img}
+                alt={p.name}
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              />
+            </div>
             <span style={{ fontSize: 10.5, letterSpacing: "1.5px", textTransform: "uppercase", color: "#2f867c", marginBottom: 6 }}>
               {p.category}
             </span>

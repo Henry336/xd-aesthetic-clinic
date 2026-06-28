@@ -20,10 +20,14 @@ export default function Spotlight() {
               borderRadius: 18,
               boxShadow: "0 30px 60px -30px rgba(0,0,0,0.5)",
               border: "1px solid rgba(255,255,255,0.07)",
-              background: "#1a3d38",
               aspectRatio: "6/5",
             }}
           >
+            <img
+              src="/laser_skin_treatment.png"
+              alt="Laser skin treatment in session"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            />
             <div
               style={{
                 position: "absolute",

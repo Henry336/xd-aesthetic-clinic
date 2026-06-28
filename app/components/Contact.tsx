@@ -328,10 +328,15 @@ export default function Contact() {
               overflow: "hidden",
               borderRadius: 18,
               border: "1px solid #e3dbcd",
-              background: "#ddd5c5",
               aspectRatio: "5/4",
             }}
-          />
+          >
+            <img
+              src="/xd_clinic_exterior.png"
+              alt="XD Aesthetic Clinic exterior"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            />
+          </div>
           <div>
             <span
               style={{
