@@ -36,15 +36,12 @@ export default function Header() {
           gap: 24,
         }}
       >
-        {/* Logo */}
-        <a href="#home" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-          <Image
+        
+        <a href="#home" style={{ display: "flex", alignItems: "center" }}>
+          <img
             src="/xd-logo-header.png"
             alt="XD Aesthetic Clinic"
-            width={120}
-            height={34}
-            priority
-            style={{ height: 34, width: "auto" }}
+            style={{ height: 34, width: "auto", objectFit: "contain" }}
           />
         </a>
 
